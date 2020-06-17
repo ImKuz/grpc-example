@@ -48,4 +48,5 @@ For more details see [grpc-swift](https://github.com/grpc/grpc-swift) docs or [G
 
 ### Author
 Mikhail Kuzmin 
+
 mkuzmin231@gmail.com
