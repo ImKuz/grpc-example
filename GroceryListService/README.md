@@ -1,3 +1,3 @@
-# hello
+# GroceryListService
 
-A description of this package.
+Primitive gRPC driven service developed in Swift
