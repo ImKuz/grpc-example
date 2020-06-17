@@ -2,9 +2,14 @@ import GRPC
 import NIO
 import Logging
 
+struct Constants {
+    static let host = "localhost"
+    static let port = 8000
+}
+
 LoggingSystem.bootstrap {
     var handler = StreamLogHandler.standardOutput(label: $0)
-    handler.logLevel = .debug
+    handler.logLevel = .error
 
     return handler
 }
@@ -20,7 +25,7 @@ func main(args: [String]) throws {
 
     let server = Server.insecure(group: group)
         .withServiceProviders([provider])
-        .bind(host: "localhost", port: 8000)
+        .bind(host: Constants.host, port: Constants.port)
 
     server
         .map {$0.channel.localAddress}

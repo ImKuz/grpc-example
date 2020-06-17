@@ -67,9 +67,7 @@
 				74657DBF24997C9B007905F9 /* Model */,
 				74657DC624997D8A007905F9 /* ViewModel */,
 				74657DC524997D81007905F9 /* View */,
-				74657DB1249975F1007905F9 /* Assets.xcassets */,
-				74657DB3249975F1007905F9 /* LaunchScreen.storyboard */,
-				74657DB6249975F1007905F9 /* Info.plist */,
+				74DBB2FF249A8DD50003DD56 /* Resources */,
 			);
 			path = GroceryListClient;
 			sourceTree = "<group>";
@@ -121,6 +119,16 @@
 				74657DA8249975F0007905F9 /* AppDelegate.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		74DBB2FF249A8DD50003DD56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74657DB3249975F1007905F9 /* LaunchScreen.storyboard */,
+				74657DB1249975F1007905F9 /* Assets.xcassets */,
+				74657DB6249975F1007905F9 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BLYS95997;
-				INFOPLIST_FILE = GroceryListClient/Info.plist;
+				INFOPLIST_FILE = GroceryListClient/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,7 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BLYS95997;
-				INFOPLIST_FILE = GroceryListClient/Info.plist;
+				INFOPLIST_FILE = GroceryListClient/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

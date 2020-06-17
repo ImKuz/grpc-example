@@ -26,40 +26,6 @@ import NIO
 import NIOHTTP1
 import SwiftProtobuf
 
-
-/// Usage: instantiate GroceryList_GroceryListClient, then call methods of this protocol to make API calls.
-internal protocol GroceryList_GroceryListClientProtocol {
-  func get(_ request: GroceryList_Empty, callOptions: CallOptions?) -> UnaryCall<GroceryList_Empty, GroceryList_GroceryListReply>
-}
-
-internal final class GroceryList_GroceryListClient: GRPCClient, GroceryList_GroceryListClientProtocol {
-  internal let channel: GRPCChannel
-  internal var defaultCallOptions: CallOptions
-
-  /// Creates a client for the groceryList.GroceryList service.
-  ///
-  /// - Parameters:
-  ///   - channel: `GRPCChannel` to the service host.
-  ///   - defaultCallOptions: Options to use for each service call if the user doesn't provide them.
-  internal init(channel: GRPCChannel, defaultCallOptions: CallOptions = CallOptions()) {
-    self.channel = channel
-    self.defaultCallOptions = defaultCallOptions
-  }
-
-  /// Sends a greeting.
-  ///
-  /// - Parameters:
-  ///   - request: Request to send to get.
-  ///   - callOptions: Call options; `self.defaultCallOptions` is used if `nil`.
-  /// - Returns: A `UnaryCall` with futures for the metadata, status and response.
-  internal func get(_ request: GroceryList_Empty, callOptions: CallOptions? = nil) -> UnaryCall<GroceryList_Empty, GroceryList_GroceryListReply> {
-    return self.makeUnaryCall(path: "/groceryList.GroceryList/get",
-                              request: request,
-                              callOptions: callOptions ?? self.defaultCallOptions)
-  }
-
-}
-
 /// To build a server, implement a class that conforms to this protocol.
 internal protocol GroceryList_GroceryListProvider: CallHandlerProvider {
   /// Sends a greeting.
