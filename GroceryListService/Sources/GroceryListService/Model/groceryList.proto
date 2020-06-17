@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package groceryList;
+
+service GroceryList {
+  // Sends a greeting.
+  rpc get(Empty) returns (GroceryListReply) {}
+}
+
+message Empty {
+
+}
+
+message Item {
+    string title = 1;
+}
+
+message GroceryListReply {
+    repeated Item items = 1;
+}
